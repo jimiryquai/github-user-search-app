@@ -1,0 +1,95 @@
+:root {
+  --color-accent: hsl(212, 100%, 50%);
+  --color-accent-hover: hsl(212, 100%, 69%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-error: hsl(0, 92%, 62%);
+  --color-lm-bg: hsl(227, 100%, 98%);
+  --color-lm-white: rgb(254, 254, 254);
+  --color-lm-text-reg: hsl(217, 35%, 45%);
+  --color-lm-text-reg-alt: hsl(217, 20%, 51%);
+  --color-lm-text-bold: hsl(217, 21%, 21%);
+  --color-lm-toggle-hover: hsl(220, 18%, 16%);
+  --color-dm-bg: hsl(220, 40%, 13%);
+  --color-dm-primary: hsl(222, 41%, 20%);
+  --color-dm-toggle-hover: hsl(222, 44%, 70%);
+  --drop-shadow: 0 16 30 -10 hsl(227, 46, 50%, 20%);
+  --font-family: "Space Mono", mono;
+  --font-weight-bold: 900;
+  --font-size-h1: 4rem;
+  --font-size-h2: 3rem;
+  --font-size-h3: 2rem;
+  --font-size-h4: 1.35rem;
+  --font-size-text: 1.15rem;
+  --border-radius: 8px;
+}
+
+* {
+  /* Remove default margin on everything */
+  margin: 0;
+  /* Remove default padding on everything */
+  padding: 0;
+}
+
+/* Use a more-intuitive box-sizing model on everything */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Allow percentage-based heights in the application */
+  block-size: 100%;
+  /* Making sure text size is only controlled by font-size */
+  -webkit-text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+body {
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  /* https://marco.org/2012/11/15/text-rendering-optimize-legibility */
+  text-rendering: optimizeSpeed;
+  /* Allow percentage-based heights in the application */
+  min-block-size: 100%;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-gutter#example_2 */
+  /* scrollbar-gutter: stable both-edges; Removed until this bug is fixed: https://bugs.chromium.org/p/chromium/issues/detail?id=1318404#c2 */
+  min-height: 100vh;
+  line-height: 1.5;
+  position: relative;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
