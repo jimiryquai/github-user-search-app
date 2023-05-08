@@ -15,8 +15,43 @@
     <div class="page">
       <header class="header">
         <h1 class="header__heading">devfinder</h1>
+        <div class="header__toggle-container">
+          <p class="header__toggle-label">DARK</p>
+          <button class="header__toggle" title="dark mode toggle"></button>
+        </div>
       </header>
       <main class="main">
+        <div class="search-bar">
+          <form class="search-bar__form" novalidate>
+            <img src="./images/icon-search.svg" alt="magnifying glass icon"
+              class="search-bar__icon">
+            <input class="search-bar__input" type="text" name="search"
+              placeholder="Search GitHub username...">
+            <button class="search-bar__button" type="submit">Search</button>
+          </form>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img src="" alt="" class="card__avatar">
+            <div class="card__header-container">
+              <h2 class="card__user-name"></h2>
+              <a href="" class="card__user-login"></a>
+              <p class="card__user-created"></p>
+            </div>
+          </div>
+          <div class="card__user-bio"></div>
+          <div class="card__user-stats"></div>
+          <ul class="card__list">
+            <li class="card__list-item"><a href="" class="card__list-link"></a>
+            </li>
+            <li class="card__list-item"><a href="" class="card__list-link"></a>
+            </li>
+            <li class="card__list-item"><a href="" class="card__list-link"></a>
+            </li>
+            <li class="card__list-item"><a href="" class="card__list-link"></a>
+            </li>
+          </ul>
+        </div>
 
       </main>
       <footer class="footer">
