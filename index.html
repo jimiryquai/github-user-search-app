@@ -14,7 +14,7 @@
   <body>
     <div class="page">
       <header class="header">
-        <h1 class="header__heading">devfinder</h1>
+        <p class="header__heading">devfinder</p>
         <div class="header__toggle-container">
           <p class="header__toggle-label">DARK</p>
           <button class="header__toggle" title="dark mode toggle"></button>
@@ -30,17 +30,37 @@
             <button class="search-bar__button" type="submit">Search</button>
           </form>
         </div>
-        <div class="card">
-          <div class="card__header">
-            <img src="" alt="" class="card__avatar">
-            <div class="card__header-container">
-              <h2 class="card__user-name"></h2>
-              <a href="" class="card__user-login"></a>
-              <p class="card__user-created"></p>
+        <div class="user-card">
+          <div class="user-card__header">
+            <img src="./images/avatar.png" alt="user avatar"
+              class="user-card__avatar">
+            <div class="user-card__header-container">
+              <h1 class="user-card__name">
+                The Octocat
+              </h1>
+              <h3 class="user-card__login">@octocat</h3>
+              <p class="user-card__createdon">Joined 26 Jan 2011</p>
             </div>
           </div>
-          <div class="card__user-bio"></div>
-          <div class="card__user-stats"></div>
+          <p class="user-card__bio">Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit. Donec odio. Quisque
+            volutpat mattis eros.</p>
+          <div class="user-card__stats-wrapper">
+            <div class="user-card__stats-row">
+              <div class="user-card__stat-column">
+                <h4 class="user-card__stat-heading">Repos</h4>
+                <h2 class="user-card__stat-number">8</h2>
+              </div>
+              <div class="user-card__stat-column">
+                <h4 class="user-card__stat-heading">Followers</h4>
+                <h2 class="user-card__stat-number">3938</h2>
+              </div>
+              <div class="user-card__stat-column">
+                <h4 class="user-card__stat-heading">Following</h4>
+                <h2 class="user-card__stat-number">9</h2>
+              </div>
+            </div>
+          </div>
           <ul class="card__list">
             <li class="card__list-item"><a href="" class="card__list-link"></a>
             </li>
