@@ -3,6 +3,7 @@
   max-width: 1440px;
   margin: 0 auto;
   font-family: var(--font-family);
-  background-color: var(--color-lm-bg);
+  color: var(--color);
+  background-color: var(--background-color);
   padding: 2rem 1.5rem;
 }

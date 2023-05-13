@@ -1,17 +1,8 @@
 :root {
-  --color-accent: hsl(212, 100%, 50%);
-  --color-accent-hover: hsl(212, 100%, 69%);
-  --color-white: hsl(0, 0%, 100%);
-  --color-error: hsl(0, 92%, 62%);
-  --color-lm-bg: hsl(227, 100%, 98%);
-  --color-lm-white: rgb(254, 254, 254);
-  --color-lm-text-reg: hsl(217, 35%, 45%);
-  --color-lm-text-reg-alt: hsl(217, 20%, 51%);
-  --color-lm-text-bold: hsl(217, 21%, 21%);
-  --color-lm-toggle-hover: hsl(220, 18%, 16%);
-  --color-dm-bg: hsl(220, 40%, 13%);
-  --color-dm-primary: hsl(222, 41%, 20%);
-  --color-dm-toggle-hover: hsl(222, 44%, 70%);
+  color-scheme: light dark;
+  --accent-color: hsl(212, 100%, 50%);
+  --accent-hover-color: hsl(212, 100%, 69%);
+  --error-color: hsl(0, 92%, 62%);
   --drop-shadow: 0 16 30 -10 hsl(227, 46, 50%, 20%);
   --font-family: "Space Mono", mono;
   --font-weight-bold: 900;

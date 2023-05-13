@@ -1,0 +1,7 @@
+:root {
+  --background-color: hsl(220, 40%, 13%);
+  --accent-background-color: hsl(222, 41%, 20%);
+  --color: hsl(0, 0%, 100%);
+  --color: hsl(0, 0%, 100%);
+  --toggle-hover-color: hsl(222, 44%, 70%);
+}
