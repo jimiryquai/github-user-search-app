@@ -4,4 +4,5 @@
   --color: hsl(0, 0%, 100%);
   --color: hsl(0, 0%, 100%);
   --toggle-hover-color: hsl(222, 44%, 70%);
+  --toggle-icon-url: url("../../../images/icon-sun.svg");
 }

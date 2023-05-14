@@ -4,4 +4,5 @@
   --color: hsl(217, 35%, 45%);
   --bold-color: hsl(217, 21%, 21%);
   --toggle-hover-color: hsl(220, 18%, 16%);
+  --icon-url: url("../../../images/icon-moon.svg");
 }

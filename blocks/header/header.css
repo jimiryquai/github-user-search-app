@@ -1,2 +1,10 @@
 @import url("./__heading/header__heading.css");
+@import url("./__toggle-container/header__toggle-container.css");
+@import url("./__toggle-label/header__toggle-label.css");
 @import url("./__toggle/header__toggle.css");
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

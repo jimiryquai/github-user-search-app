@@ -1,0 +1,7 @@
+.header__toggle-container {
+  display: flex;
+}
+
+.header__toggle-container :first-child {
+  margin-inline-end: 1rem;
+}

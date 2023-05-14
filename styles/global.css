@@ -6,11 +6,11 @@
   --drop-shadow: 0 16 30 -10 hsl(227, 46, 50%, 20%);
   --font-family: "Space Mono", mono;
   --font-weight-bold: 900;
-  --font-size-h1: 4rem;
-  --font-size-h2: 3rem;
-  --font-size-h3: 2rem;
-  --font-size-h4: 1.35rem;
-  --font-size-text: 1.15rem;
+  --font-size-h1: 1.6rem;
+  --font-size-h2: 1.4rem;
+  --font-size-h3: 1rem;
+  --font-size-h4: 0.8rem;
+  --font-size-text: 0.9rem;
   --border-radius: 8px;
 }
 
