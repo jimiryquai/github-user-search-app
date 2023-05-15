@@ -1,9 +1,12 @@
 .page {
-  /* min-height: 100vh; */
   max-width: 1440px;
   margin: 0 auto;
   font-family: var(--font-family);
   color: var(--color);
   background-color: var(--background-color);
   padding: 2rem 1.5rem;
+}
+
+.page > * + * {
+  margin-block-start: 2.25rem;
 }
