@@ -5,3 +5,7 @@
   background-color: var(--accent-color);
   border: none;
 }
+
+.search-bar__button:hover {
+  background-color: var(--accent-hover-color);
+}
