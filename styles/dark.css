@@ -1,8 +1,8 @@
 :root {
-  --background-color: hsl(220, 40%, 13%);
-  --accent-background-color: hsl(222, 41%, 20%);
-  --color: hsl(0, 0%, 100%);
+  --background-color: hsl(220, 40.3%, 13.1%);
+  --accent-background-color: hsl(222.4, 40.6%, 19.8%);
   --color: hsl(0, 0%, 100%);
   --toggle-hover-color: hsl(222, 44%, 70%);
+  --drop-shadow: none;
   --toggle-icon-url: url("../../../images/icon-sun.svg");
 }

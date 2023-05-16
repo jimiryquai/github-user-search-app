@@ -1,1 +1,7 @@
-
+.search-bar__button {
+  width: 5.25rem;
+  height: 2.9rem;
+  border-radius: var(--border-radius-sm);
+  background-color: var(--accent-color);
+  border: none;
+}

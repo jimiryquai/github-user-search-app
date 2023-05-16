@@ -1,0 +1,13 @@
+.search-bar__input {
+  width: 11.5rem;
+  border: none;
+  background-color: var(--accent-background-color);
+}
+
+.search-bar__input:focus {
+  outline: none;
+}
+
+.search-bar__input::placeholder {
+  color: var(--color);
+}
