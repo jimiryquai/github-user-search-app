@@ -1,6 +1,8 @@
 .page {
   max-width: 90rem;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: var(--font-family);
   color: var(--color);
   background-color: var(--background-color);

@@ -1,6 +1,7 @@
 @import url("./__header/card__header.css");
 
 .card {
+  max-width: 45.6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
