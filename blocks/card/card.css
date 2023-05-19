@@ -1,4 +1,8 @@
 @import url("./__header/card__header.css");
+@import url("./__header-container/card__header-container.css");
+@import url("./__name/card__name.css");
+@import url("./__login/card__login.css");
+@import url("./__createdon/card__createdon.css");
 
 .card {
   max-width: 45.6rem;

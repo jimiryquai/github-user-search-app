@@ -1,0 +1,5 @@
+.card__name {
+  font-weight: var(--font-weight-bold);
+  font-size: clamp(1rem, 0.4384rem + 2.4vw, 1.6rem);
+  color: var(--bold-color);
+}

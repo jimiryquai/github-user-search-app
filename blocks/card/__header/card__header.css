@@ -1,5 +1,11 @@
 .card__header {
   display: flex;
-  width: 14.6rem;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 20.9rem;
   height: 4.4rem;
+}
+
+.card__header .card__avatar {
+  margin-right: 1.2rem;
 }

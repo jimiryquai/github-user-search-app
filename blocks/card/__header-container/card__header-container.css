@@ -1,0 +1,8 @@
+.card__header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 11rem;
+  height: 4.4rem;
+}
