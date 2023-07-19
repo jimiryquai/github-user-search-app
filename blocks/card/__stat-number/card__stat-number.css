@@ -1,0 +1,5 @@
+.card__stat-number {
+  color: var(--bold-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h3);
+}

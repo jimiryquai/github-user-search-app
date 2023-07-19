@@ -1,0 +1,4 @@
+.card__stat-heading {
+  font-weight: var(--font-weight-normal);
+  font-size: 0.7rem;
+}

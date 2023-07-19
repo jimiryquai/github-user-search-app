@@ -1,4 +1,5 @@
 .card__login {
   font-size: clamp(0.8rem, 0.4384rem + 2.4vw, 1rem);
   color: var(--accent-color);
+  font-weight: var(--font-weight-normal);
 }

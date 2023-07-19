@@ -1,0 +1,5 @@
+.card__bio {
+  max-width: 30rem;
+  width: 100%;
+  font-size: var(--font-size-text);
+}

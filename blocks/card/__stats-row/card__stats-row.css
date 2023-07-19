@@ -1,0 +1,6 @@
+.card__stats-row {
+  display: grid;
+  width: 15.5rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}

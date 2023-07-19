@@ -4,6 +4,8 @@
   background-color: var(--accent-background-color);
   text-overflow: ellipsis;
   font-size: var(--font-size-text);
+  height: 1.6rem;
+  align-self: center;
 }
 
 .search-bar__input:focus {
