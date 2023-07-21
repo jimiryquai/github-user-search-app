@@ -10,6 +10,7 @@
 @import url("./__stat-heading/card__stat-heading.css ");
 @import url("./__stat-number/card__stat-number.css");
 @import url("./__list-link/card__list-link.css");
+@import url("./__list-icon/card__list-icon.css");
 
 .card {
   max-width: 45.6rem;
