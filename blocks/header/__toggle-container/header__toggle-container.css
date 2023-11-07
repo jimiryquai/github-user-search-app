@@ -5,3 +5,11 @@
 .header__toggle-container :first-child {
   margin-inline-end: 1rem;
 }
+
+.header__toggle-container:hover * {
+  color: var(--toggle-hover-color);
+}
+
+.header__toggle-container:hover .header__toggle {
+  background-image: var(--icon-image-hover);
+}

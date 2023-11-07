@@ -1,5 +1,12 @@
 .card__list-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-decoration: none;
+  color: var(--color);
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-normal);
+}
+
+.card__list-link:hover {
+  text-decoration: underline;
 }

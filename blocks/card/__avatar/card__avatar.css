@@ -1,0 +1,9 @@
+.card__avatar {
+  height: 4.375rem;
+}
+
+@media (min-width: 768px) {
+  .card__avatar {
+    height: 7.25rem;
+  }
+}

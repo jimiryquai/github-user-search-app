@@ -7,3 +7,9 @@
   align-items: center;
   border-radius: var(--border-radius-sm);
 }
+
+@media (min-width: 768px) {
+  .card__stats-wrapper {
+    align-items: flex-start;
+  }
+}

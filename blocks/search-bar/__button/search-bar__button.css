@@ -6,6 +6,7 @@
   color: var(--accent-background-color);
   font-weight: var(--font-weight-bold);
   border: none;
+  color: var(--search-button-text-color);
 }
 
 .search-bar__button:hover {

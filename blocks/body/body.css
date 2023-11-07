@@ -1,6 +1,5 @@
-.page {
+.body {
   max-width: 90rem;
-  height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -8,9 +7,20 @@
   font-family: var(--font-family);
   color: var(--color);
   background-color: var(--background-color);
-  padding: 2rem 1.5rem;
+  padding: 2rem var(--fluid-24-98);
 }
 
-.page > * + * {
+.body > * {
+  width: 100%;
+  max-width: 45.6rem;
+}
+
+.body > * + * {
   margin-block-start: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  .body {
+    padding-top: 8.75rem;
+  }
 }

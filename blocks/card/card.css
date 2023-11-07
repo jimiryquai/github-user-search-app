@@ -1,4 +1,5 @@
 @import url("./__header/card__header.css");
+@import url("./__avatar/card__avatar.css");
 @import url("./__header-container/card__header-container.css");
 @import url("./__name/card__name.css");
 @import url("./__login/card__login.css");
@@ -9,19 +10,28 @@
 @import url("./__stat-column/card__stat-column.css");
 @import url("./__stat-heading/card__stat-heading.css ");
 @import url("./__stat-number/card__stat-number.css");
+@import url("./__list/card__list.css");
+@import url("./__list-item/card__list-item.css");
 @import url("./__list-link/card__list-link.css");
 @import url("./__list-icon/card__list-icon.css");
 
 .card {
-  max-width: 45.6rem;
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
+  justify-content: space-between;
+  padding: var(--fluid-24-40);
   background-color: var(--accent-background-color);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--drop-shadow);
+  height: 32.25rem;
 }
 
 .card > * + * {
   margin-block-start: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .card {
+    height: 30rem;
+  }
 }

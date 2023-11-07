@@ -1,0 +1,20 @@
+.card__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1.25rem);
+  row-gap: 1rem;
+  height: 7.94rem;
+}
+
+@media (min-width: 768px) {
+  .card__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 3.94rem;
+  }
+
+  .card__list > li:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}

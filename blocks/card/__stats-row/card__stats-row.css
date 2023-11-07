@@ -4,3 +4,10 @@
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
 }
+
+@media (min-width: 768px) {
+  .card__stats-row {
+    padding-inline-start: 2rem;
+    column-gap: 5.44rem;
+  }
+}
