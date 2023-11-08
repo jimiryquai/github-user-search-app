@@ -23,15 +23,25 @@
   }
 }
 
+.body.light {
+  background-color: hsl(226.7, 100%, 98.2%);
+  color: hsl(217, 35%, 45%);
+}
+
+.body.dark {
+  background-color: hsl(220, 40.3%, 13.1%);
+  color: hsl(0, 0%, 100%);
+}
+
 @media (prefers-color-scheme: light) {
-  body {
+  .body {
     background-color: hsl(226.7, 100%, 98.2%);
     color: hsl(217, 35%, 45%);
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
+  .body {
     background-color: hsl(220, 40.3%, 13.1%);
     color: hsl(0, 0%, 100%);
   }
