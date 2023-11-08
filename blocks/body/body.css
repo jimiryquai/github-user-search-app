@@ -5,8 +5,6 @@
   flex-direction: column;
   align-items: center;
   font-family: var(--font-family);
-  color: var(--color);
-  background-color: var(--background-color);
   padding: 2rem var(--fluid-24-98);
 }
 
@@ -19,8 +17,22 @@
   margin-block-start: 2.25rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .body {
     padding-top: 8.75rem;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: hsl(226.7, 100%, 98.2%);
+    color: hsl(217, 35%, 45%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: hsl(220, 40.3%, 13.1%);
+    color: hsl(0, 0%, 100%);
   }
 }

@@ -3,3 +3,15 @@
   font-weight: var(--font-weight-bold);
   color: var(--bold-color);
 }
+
+@media (prefers-color-scheme: light) {
+  .header__heading {
+    color: hsl(217, 21%, 21%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .header__heading {
+    color: hsl(0, 0%, 100%);
+  }
+}

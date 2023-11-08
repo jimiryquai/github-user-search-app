@@ -20,7 +20,6 @@
   grid-template-rows: 4.375rem 4.688rem 5.313rem 7.938rem;
   row-gap: 1.625rem;
   padding: var(--fluid-24-40);
-  background-color: var(--accent-background-color);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--drop-shadow);
   height: 32.25rem;
@@ -40,5 +39,17 @@
     height: 27.75rem;
     column-gap: 2.5rem;
     row-gap: 0;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .card {
+    background-color: hwb(0 100% 0%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: hsl(222, 39%, 20%);
   }
 }
