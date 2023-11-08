@@ -2,3 +2,11 @@
   grid-column: 1;
   font-size: var(--font-size-text);
 }
+
+@media (min-width: 90rem) {
+  .card__bio {
+    grid-column: 2/3;
+    grid-row: 2;
+    margin-top: -1.5rem;
+  }
+}
