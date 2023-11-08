@@ -1,0 +1,16 @@
+.card__user {
+  display: grid;
+  grid-template-columns: 4.375rem 11.875rem;
+  grid-template-rows: 1.5rem repeat(2, 1.188rem);
+  column-gap: 1.25rem;
+  row-gap: 0.188rem;
+}
+
+@media (min-width: 768px) {
+  .card__user {
+    grid-template-columns: 7.25rem 1fr;
+    grid-template-rows: 2.5rem 1.5rem 1fr;
+    column-gap: 2.5rem;
+    row-gap: 0.188rem;
+  }
+}

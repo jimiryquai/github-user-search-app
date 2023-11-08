@@ -1,6 +1,5 @@
-@import url("./__header/card__header.css");
+@import url("./__user/card__user.css");
 @import url("./__avatar/card__avatar.css");
-@import url("./__header-container/card__header-container.css");
 @import url("./__name/card__name.css");
 @import url("./__login/card__login.css");
 @import url("./__createdon/card__createdon.css");
@@ -16,9 +15,10 @@
 @import url("./__list-icon/card__list-icon.css");
 
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4.375rem 4.688rem 5.313rem 7.938rem;
+  row-gap: 1.625rem;
   padding: var(--fluid-24-40);
   background-color: var(--accent-background-color);
   border-radius: var(--border-radius-lg);
@@ -26,12 +26,9 @@
   height: 32.25rem;
 }
 
-.card > * + * {
-  margin-block-start: 1.5rem;
-}
-
 @media (min-width: 768px) {
   .card {
+    grid-template-rows: 7.25rem 3.125rem 5.313rem 3.875rem;
     height: 30rem;
   }
 }

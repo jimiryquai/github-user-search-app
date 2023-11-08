@@ -1,3 +1,5 @@
 .card__createdon {
   font-size: clamp(0.8rem, 0.7064rem + 2.4vw, 0.9rem);
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
