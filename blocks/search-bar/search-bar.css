@@ -6,7 +6,6 @@
 .search-bar {
   height: 3.75rem;
   border-radius: var(--border-radius-lg);
-  box-shadow: var(--drop-shadow);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,20 +13,24 @@
 
 .search-bar.light {
   background-color: var(--background-color-secondary-light);
+  box-shadow: var(--drop-shadow-light);
 }
 
 .search-bar.dark {
   background-color: var(--background-color-secondary-dark);
+  box-shadow: var(--drop-shadow-dark);
 }
 
 @media (prefers-color-scheme: light) {
   .search-bar {
     background-color: var(--background-color-secondary-light);
+    box-shadow: var(--drop-shadow-light);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .search-bar {
     background-color: var(--background-color-secondary-dark);
+    box-shadow: var(--drop-shadow-dark);
   }
 }

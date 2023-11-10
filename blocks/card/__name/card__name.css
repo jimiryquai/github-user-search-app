@@ -5,3 +5,23 @@
   grid-column: 2/3;
   grid-row: 1/2;
 }
+
+.card__name.light {
+  color: var(--bold-color-light);
+}
+
+.card__name.dark {
+  color: var(--bold-color-dark);
+}
+
+@media (prefers-color-scheme: light) {
+  .card__name {
+    color: var(--bold-color-light);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card__name {
+    color: var(--bold-color-dark);
+  }
+}
