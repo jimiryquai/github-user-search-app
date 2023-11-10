@@ -33,6 +33,7 @@ const prefersDarkModeHandler = (e) => {
 };
 
 const prefersLightModeHandler = (e) => {
+  debugger;
   if (e.matches) {
     colorSchemeLabel.textContent = 'DARK';
     allElements.forEach(element => {
