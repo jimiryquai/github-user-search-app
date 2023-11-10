@@ -11,15 +11,3 @@
 .search-bar__button:hover {
   background-color: var(--accent-hover-color);
 }
-
-/* @media (prefers-color-scheme: light) {
-  .search-bar__button {
-    color: hwb(0 100% 0%);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .search-bar__button {
-    color: hsl(222, 39%, 20%);
-  }
-} */

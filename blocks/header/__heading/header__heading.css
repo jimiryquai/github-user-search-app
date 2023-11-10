@@ -1,25 +1,24 @@
 .header__heading {
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-bold);
-  color: var(--bold-color);
 }
 
 .header__heading.light {
-  color: hsl(217, 21%, 21%);
+  color: var(--bold-color-light);
 }
 
 .header__heading.dark {
-  color: hsl(0, 0%, 100%);
+  color: var(--bold-color-dark);
 }
 
 @media (prefers-color-scheme: light) {
   .header__heading {
-    color: hsl(217, 21%, 21%);
+    color: var(--bold-color-light);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .header__heading {
-    color: hsl(0, 0%, 100%);
+    color: var(--bold-color-dark);
   }
 }

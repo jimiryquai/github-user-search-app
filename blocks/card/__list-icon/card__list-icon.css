@@ -1,3 +1,11 @@
 .card__list-icon {
   margin-right: 1rem;
 }
+
+.card__list-icon.light {
+  fill: #4b6a9b;
+}
+
+.card__list-icon.dark {
+  fill: #fff !important;
+}

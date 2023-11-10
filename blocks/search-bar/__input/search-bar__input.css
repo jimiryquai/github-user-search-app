@@ -15,14 +15,23 @@
   color: var(--color);
 }
 
+.search-bar__input.light {
+  background-color: var(--background-color-secondary-light);
+}
+
+.search-bar__input.dark {
+  background-color: var(--background-color-secondary-dark);
+  color: var(--color-dark);
+}
+
 @media (prefers-color-scheme: light) {
   .search-bar__input {
-    background-color: hwb(0 100% 0%);
+    background-color: var(--background-color-secondary-light);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .search-bar__input {
-    background-color: hsl(222, 39%, 20%);
+    background-color: var(--background-color-secondary-dark);
   }
 }

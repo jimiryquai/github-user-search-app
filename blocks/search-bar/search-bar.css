@@ -12,14 +12,22 @@
   justify-content: center;
 }
 
+.search-bar.light {
+  background-color: var(--background-color-secondary-light);
+}
+
+.search-bar.dark {
+  background-color: var(--background-color-secondary-dark);
+}
+
 @media (prefers-color-scheme: light) {
   .search-bar {
-    background-color: hwb(0 100% 0%);
+    background-color: var(--background-color-secondary-light);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .search-bar {
-    background-color: hsl(222, 39%, 20%);
+    background-color: var(--background-color-secondary-dark);
   }
 }

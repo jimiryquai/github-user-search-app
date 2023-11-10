@@ -17,32 +17,32 @@
   margin-block-start: 2.25rem;
 }
 
-@media (min-width: 48rem) {
-  .body {
-    padding-top: 8.75rem;
-  }
-}
-
 .body.light {
-  background-color: hsl(226.7, 100%, 98.2%);
-  color: hsl(217, 35%, 45%);
+  background-color: var(--background-color-light);
+  color: var(--color-light);
 }
 
 .body.dark {
-  background-color: hsl(220, 40.3%, 13.1%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--background-color-dark);
+  color: var(--color-dark);
 }
 
 @media (prefers-color-scheme: light) {
   .body {
-    background-color: hsl(226.7, 100%, 98.2%);
-    color: hsl(217, 35%, 45%);
+    background-color: var(--background-color-light);
+    color: var(--color-light);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .body {
-    background-color: hsl(220, 40.3%, 13.1%);
-    color: hsl(0, 0%, 100%);
+    background-color: var(--background-color-dark);
+    color: var(--color-dark);
+  }
+}
+
+@media (min-width: 48rem) {
+  .body {
+    padding-top: 8.75rem;
   }
 }

@@ -21,8 +21,31 @@
   row-gap: 1.625rem;
   padding: var(--fluid-24-40);
   border-radius: var(--border-radius-lg);
-  box-shadow: var(--drop-shadow);
   height: 32.25rem;
+}
+
+.card.light {
+  background-color: var(--background-color-secondary-light);
+  box-shadow: var(--drop-shadow-light);
+}
+
+.card.dark {
+  background-color: var(--background-color-secondary-dark);
+  box-shadow: var(--drop-shadow-dark);
+}
+
+@media (prefers-color-scheme: light) {
+  .card {
+    background-color: var(--background-color-secondary-light);
+    box-shadow: var(--drop-shadow-light);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: var(--background-color-secondary-dark);
+    box-shadow: var(--drop-shadow-dark);
+  }
 }
 
 @media (min-width: 48rem) {
@@ -39,17 +62,5 @@
     height: 27.75rem;
     column-gap: 2.5rem;
     row-gap: 0;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .card {
-    background-color: hwb(0 100% 0%);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .card {
-    background-color: hsl(222, 39%, 20%);
   }
 }

@@ -7,6 +7,14 @@
   grid-column: 1;
 }
 
+.card__stats-wrapper.light {
+  background-color: var(--background-color-light);
+}
+
+.card__stats-wrapper.dark {
+  background-color: var(--background-color-dark);
+}
+
 @media (min-width: 48rem) {
   .card__stats-wrapper {
     align-items: flex-start;
@@ -23,12 +31,12 @@
 
 @media (prefers-color-scheme: light) {
   .card__stats-wrapper {
-    background-color: hsl(226.7, 100%, 98.2%);
+    background-color: var(--background-color-light);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .card__stats-wrapper {
-    background-color: hsl(220, 40.3%, 13.1%);
+    background-color: var(--background-color-dark);
   }
 }

@@ -25,12 +25,20 @@ const toggleModeHandler = () => {
 const prefersDarkModeHandler = (e) => {
   if (e.matches) {
     colorSchemeLabel.textContent = 'LIGHT';
+    allElements.forEach(element => {
+      element.classList.remove("light");
+      element.classList.remove("dark");
+    });
   }
 };
 
 const prefersLightModeHandler = (e) => {
   if (e.matches) {
     colorSchemeLabel.textContent = 'DARK';
+    allElements.forEach(element => {
+      element.classList.remove("dark");
+      element.classList.remove("light");
+    });
   }
 };
 

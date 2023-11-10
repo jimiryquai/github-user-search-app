@@ -1,17 +1,24 @@
 .card__stat-number {
-  color: var(--bold-color);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-h3);
 }
 
+.card__stat-number.light {
+  color: var(--bold-color-light);
+}
+
+.card__stat-number.dark {
+  color: var(--bold-color-dark);
+}
+
 @media (prefers-color-scheme: light) {
-  .card {
-    color: hsl(217, 21%, 21%);
+  .card__stat-number {
+    color: var(--bold-color-light);
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  .card {
-    color: hsl(0, 0%, 100%);
+  .card__stat-number {
+    color: var(--bold-color-dark);
   }
 }
