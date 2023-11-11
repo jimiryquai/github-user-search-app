@@ -4,6 +4,7 @@
 
 .header__toggle-container :first-child {
   margin-inline-end: 1rem;
+  align-self: flex-end;
 }
 
 .header__toggle-container.light:hover * {
