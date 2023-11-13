@@ -1,6 +1,11 @@
 const colorSchemeLabel = document.querySelector('[class*="header__toggle-label"]');
 const colorSchemeToggle = document.querySelector('.header__toggle');
 const allElements = Array.from(document.getElementsByTagName("*"));
+const blogLink = document.querySelector('.card__list-link_blog');
+const companyLink = document.querySelector('.card__list-link_company');
+const twitterLink = document.querySelector('.card__list-link_twitter');
+const searchBarButton = document.querySelector('.search-bar__button');
+const searchBarInput = document.querySelector('.search-bar__input')
 
 const setColorSchemeLabelOnLoad = () => matchMedia("(prefers-color-scheme: light)").matches ? colorSchemeLabel.textContent = 'DARK' : colorSchemeLabel.textContent = 'LIGHT';
 
@@ -58,9 +63,6 @@ const convertIsoDate = (isoDate) => {
 
 const setUser = (user) => {
   const { login, avatar_url, name, company, blog, location, bio, twitter_username, public_repos, followers, following, created_at } = user;
-  const blogLink = document.querySelector('.card__list-link_blog');
-  const companyLink = document.querySelector('.card__list-link_company');
-  const twitterLink = document.querySelector('.card__list-link_twitter');
   
   !blog ? blogLink.setAttribute("href", "#") : blogLink.setAttribute("href", blog);
   !company ? companyLink.setAttribute("href", "#") : companyLink.setAttribute("href", `https://github.com/${company.slice(1)}`);
@@ -74,7 +76,7 @@ const setUser = (user) => {
   document.querySelector('.location').textContent = location ?? "Not Available";
   document.querySelector('.location').textContent = location ?? "Not Available";
   document.querySelector('.twitter').textContent = twitter_username ?? "Not Available";
-  document.querySelector('.blog').textContent = blog ?? "Not Avialable";
+  document.querySelector('.blog').textContent = blog ?? "Not Available";
   document.querySelector('.repos').textContent = public_repos;
   document.querySelector('.followers').textContent = followers;
   document.querySelector('.following').textContent = following;
@@ -86,3 +88,12 @@ matchMedia('(prefers-color-scheme: dark)').addEventListener('change', prefersDar
 colorSchemeToggle.addEventListener('click', toggleModeHandler);
 const octocat = await getUser('octocat');
 setUser(octocat);
+searchBarButton.addEventListener('click', async () => {
+  const username = searchBarInput.value;
+  const user = await getUser(username);
+  if (!user) {
+    alert('User not found');
+    return;
+  }
+  setUser(user);
+});
