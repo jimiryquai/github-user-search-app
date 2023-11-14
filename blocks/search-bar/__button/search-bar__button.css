@@ -11,3 +11,7 @@
 .search-bar__button:hover {
   background-color: var(--accent-hover-color);
 }
+
+.search-bar__button:disabled {
+  cursor: not-allowed;
+}

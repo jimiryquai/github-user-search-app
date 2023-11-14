@@ -4,6 +4,7 @@
   color: var(--bold-color);
   grid-column: 2/3;
   grid-row: 1/2;
+  text-wrap: nowrap;
 }
 
 .card__name.light {
