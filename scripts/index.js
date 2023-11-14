@@ -4,8 +4,9 @@ const allElements = Array.from(document.getElementsByTagName("*"));
 const blogLink = document.querySelector('.card__list-link_blog');
 const companyLink = document.querySelector('.card__list-link_company');
 const twitterLink = document.querySelector('.card__list-link_twitter');
-const searchBarButton = document.querySelector('.search-bar__button');
-const searchBarInput = document.querySelector('.search-bar__input')
+const form = document.querySelector('.search-bar__form');
+const searchBarButton = form.querySelector('.search-bar__button');
+const searchBarInput = form.querySelector('.search-bar__input');
 
 const setColorSchemeLabelOnLoad = () => matchMedia("(prefers-color-scheme: light)").matches ? colorSchemeLabel.textContent = 'DARK' : colorSchemeLabel.textContent = 'LIGHT';
 
@@ -82,17 +83,30 @@ const setUser = (user) => {
   document.querySelector('.following').textContent = following;
 }
 
+const isFormValid = () => {
+  return searchBarInput.value.length > 0;
+}
+
+const setButtonDisabledAttrValue = () => {
+  searchBarButton.disabled = !isFormValid();
+}
+
 setColorSchemeLabelOnLoad();
+setButtonDisabledAttrValue();
 matchMedia('(prefers-color-scheme: light)').addEventListener('change', prefersLightModeHandler);
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', prefersDarkModeHandler);
 colorSchemeToggle.addEventListener('click', toggleModeHandler);
 const octocat = await getUser('octocat');
 setUser(octocat);
-searchBarButton.addEventListener('click', async () => {
-  const username = searchBarInput.value;
-  const user = await getUser(username);
-  if (!user) {
-    alert('User not found');
+
+searchBarInput.addEventListener('keyup', (e) => {
+  setButtonDisabledAttrValue();
+});
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const user = await getUser(searchBarInput.value);
+  if (!user.login) {
     return;
   }
   setUser(user);
